@@ -13,7 +13,7 @@
   status: pass
 - summary: |
      Успешный выбор языка.
-  status: pass
+  status: fail
 - summary: |
     Успешное оформление заказа.
   status: pass
