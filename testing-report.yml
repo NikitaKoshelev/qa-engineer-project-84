@@ -1,0 +1,22 @@
+---
+- summary: |
+    Успешный Поиск товара по названию.
+  status: pass
+- summary: |
+    Успешная фильтрация товара по цене.
+  status: pass
+- summary: |
+    Успешная фильтрация товара по категории.
+  status: pass
+- summary: |
+    Успешное удаление товара из корзины.
+  status: pass
+- summary: |
+     Успешный выбор языка.
+  status: pass
+- summary: |
+    Успешное оформление заказа.
+  status: pass
+- summary: |
+    Успешное добавление товара в корзину.
+  status: pass
