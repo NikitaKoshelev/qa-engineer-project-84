@@ -38,7 +38,7 @@ test-cases:
     
 bugreports:
   - summary: |
-      Пустая строка в категории
+      Пустая строка в категории.
     environment: |
       Google Chrome   Версия: 137.0.7151.69 (Официальная сборка) (64 бит)
       ОС Windows 11 Версия:23H2  Сборка:22631.5413
@@ -49,3 +49,56 @@ bugreports:
       В "Категории" предоставлен полный список.
     actual-result: |
       Пустое поле в начале списка.
+
+  - summary: |
+       Не работает чекбокс "В наличии" при выбранной пустой "Категории!"
+    environment: |
+      Google Chrome   Версия: 137.0.7151.69 (Официальная сборка) (64 бит)
+      ОС Windows 11 Версия:23H2  Сборка:22631.5413
+    steps-to-reproduce: |
+      1. Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Убрать галочку с чекбокса "Нет в наличии"
+    expected-result: |
+      Отображаются товары которых нет в наличии.
+    actual-result: |
+      Ничего не происходит.
+
+  - summary: |
+       Не работает поиск товаров по цене. при выбранной пустой "Категории!"
+    environment: |
+      Google Chrome   Версия: 137.0.7151.69 (Официальная сборка) (64 бит)
+      ОС Windows 11 Версия:23H2  Сборка:22631.5413
+    steps-to-reproduce: |
+      1. Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Ввсести в поле "ОТ" например(0)
+      3. Ввсести в поле "ДО" например(1000)
+    expected-result: |
+      Отображаются товары в заданном ценовом диапозоне.
+    actual-result: |
+      Ничего не происходит.
+
+  - summary: |
+       Не работает поиск товаров по названию. при выбранной пустой "Категории!"
+    environment: |
+      Google Chrome   Версия: 137.0.7151.69 (Официальная сборка) (64 бит)
+      ОС Windows 11 Версия:23H2  Сборка:22631.5413
+    steps-to-reproduce: |
+      1. Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Ввсести в поле "поиск" например (Coco)
+    expected-result: |
+      Отображаются карточка товара.
+    actual-result: |
+      Ничего не происходит.
+
+  - summary: |
+       Не работает поиск товаров по бренду. при выбранной пустой "Категории!"
+    environment: |
+      Google Chrome   Версия: 137.0.7151.69 (Официальная сборка) (64 бит)
+      ОС Windows 11 Версия:23H2  Сборка:22631.5413
+    steps-to-reproduce: |
+      1. Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Выбрать бренд например (Dior)
+    expected-result: |
+      Отображаются товары выбранного бренда.
+    actual-result: |
+      Ничего не происходит.
