@@ -4,7 +4,7 @@
   status: pass
 - summary: |
     Успешная фильтрация товара по цене.
-  status: fail
+  status: pass
 - summary: |
     Успешная фильтрация товара по категории.
   status: pass
