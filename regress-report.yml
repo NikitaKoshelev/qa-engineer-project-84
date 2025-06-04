@@ -1,0 +1,51 @@
+test-cases:
+  - summary: |
+       Успешный Поиск товара по названию.
+    status: pass
+
+  - summary: |
+       Успешная фильтрация товара по цене.
+    status: fail
+
+  - summary: |
+       Успешная фильтрация товара по категории.
+    status: pass
+
+  - summary: |
+        Успешное добавление товара в корзину.
+    status: pass
+
+  - summary: |
+         Успешное удаление товара из корзины.
+    status: pass
+
+  - summary: |
+        Успешный выбор языка.
+    status: fail
+
+  - summary: |
+        Успешная отчистка корзины.
+    status: pass
+
+  - summary: |
+         Успешная проверка ввода отрицательной цены.
+    status: fail
+
+  - summary: |
+         Успешная проверка адаптивности интерфейса на различных устройствах.
+    status: fail
+
+    
+bugreports:
+  - summary: |
+      Пустая строка в категории
+    environment: |
+      Google Chrome   Версия: 137.0.7151.69 (Официальная сборка) (64 бит)
+      ОС Windows 11 Версия:23H2  Сборка:22631.5413
+    steps-to-reproduce: |
+      1. Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Нажать на "Категория"
+    expected-result: |
+      В "Категории" предоставлен полный список.
+    actual-result: |
+      Пустое поле в начале списка.
