@@ -31,4 +31,10 @@
   status: fail 
 - summary: |
      Успешная проверка на наличие товара.
-  status: fail 
+  status: fail
+- summary: |
+     Успешная фильтрация товара по бренду.
+  status: pass 
+  - summary: |
+     Успешная фильтрация товара по нескольким брендам.
+  status: pass 
