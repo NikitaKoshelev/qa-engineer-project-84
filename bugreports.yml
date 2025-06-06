@@ -7,7 +7,7 @@
   steps-to-reproduce: |
     1. Зайти на страницу https://hexlet-products-store.vercel.app/
     2. Найти переключатель языка(В верхней части сайта)
-    3. Нажать на кнопку "Язык"
+    3. Нажать на "Язык"
   expected-result: |
     Должно отображаться два флага: "Российский" и "Английский". 
   actual-result: |
@@ -82,7 +82,7 @@
     1. Зайти на страницу https://hexlet-products-store.vercel.app/
     2. Добавить любые товары в корзину.
     3. Перейти на страницу  корзины https://hexlet-products-store.vercel.app/cart
-    4. Нажать на кнопку "Очитстить корзину"
+    4. Нажать на "Очитстить корзину".
     5. Перезагрузить станицу.
   expected-result: |
      Корзина пустая.
@@ -98,7 +98,7 @@
     1. Зайти на страницу https://hexlet-products-store.vercel.app/
     2. Добавить любой товар в корзину.
     3. Перейти на страницу  корзины https://hexlet-products-store.vercel.app/cart
-    4. Нажать на кнопку "Оформить заказ"
+    4. Нажать на "Оформить заказ".
   expected-result: |
      Корзина пустая.
   actual-result: |
