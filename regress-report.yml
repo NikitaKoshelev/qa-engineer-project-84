@@ -1,6 +1,6 @@
 ---
 test-cases:
-  - summary: |
+- summary: |
     Успешный Поиск товара по названию.
   status: pass
 - summary: |
