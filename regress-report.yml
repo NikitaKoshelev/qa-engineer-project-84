@@ -3,42 +3,55 @@ test-cases:
 - summary: |
     Успешный Поиск товара по названию.
   status: pass
+
 - summary: |
     Успешная фильтрация товара по цене.
-  status: pass
+  status: fail
+
 - summary: |
     Успешная фильтрация товара по категории.
   status: pass
+
 - summary: |
     Успешное удаление товара из корзины.
   status: pass
+
 - summary: |
      Успешный выбор языка.
   status: fail
+
 - summary: |
     Успешное оформление заказа.
   status: pass
+
 - summary: |
     Успешное добавление товара в корзину.
   status: pass
+
 - summary: |
      Успешная отчистка корзины.
   status: pass 
+
 - summary: |
       Успешная проверка ввода отрицательной цены.
   status: fail 
+
 - summary: |
      Успешная проверка адаптивности интерфейса.
   status: fail 
+
 - summary: |
      Успешная проверка на наличие товара.
   status: fail
+
 - summary: |
      Успешная фильтрация товара по бренду.
   status: pass 
+
 - summary: |
      Успешная фильтрация товара по нескольким брендам.
   status: pass
+  
 - summary: |
      Успешная фильтрация товара по категории и бренду.
   status: fail 
