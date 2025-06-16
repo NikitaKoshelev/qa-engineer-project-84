@@ -152,5 +152,25 @@
       Полная загрузка страницы ≤2 секунды.
   actual-result: |
      Фактическая полная загрузка страницы >7 секунд.
+
+- summary: |
+    GET-запрос возвращает 500 Internal Server Error
+  environment: |
+    Google Chrome   Версия: 137.0.7151.69 (Официальная сборка) (64 бит)
+    ОС Windows 11 Версия:23H2  Сборка:22631.5413
+  steps-to-reproduce: |
+    1. Открыть страницу https://hexlet-products-store.vercel.app/
+    2. Открыть DevTools.
+    3. Перейти на вкладку "сеть".
+    4. Обновить страницу.
+    5. Добавить любой товар в корзину.
+    6. Перейти в корзину.
+    7. Нажать "Оформить Заказ".
+  expected-result: |
+      Статус 200 OK с данными заказов пользователя.
+  actual-result: |
+     Ошибка "failed GET 500 Internal Server Error".
+
+
      
 
